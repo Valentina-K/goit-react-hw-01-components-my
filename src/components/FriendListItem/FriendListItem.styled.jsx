@@ -4,8 +4,8 @@ export const Item = styled.li`
   justify-content: flex-start;
   align-items: center;
   width: 400px;
-  padding: 20px;
-  margin-bottom: 18px;
+  padding: ${({theme}) => theme.spacing(5)};
+  margin-bottom: ${({theme}) => theme.spacing(5)};
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -19,13 +19,13 @@ export const Status = styled.span`
 `;
 
 export const Avatar = styled.img`
-  margin-left: 20px;
+  margin-left: ${({theme}) => theme.spacing(5)};
   width: 96px;
   border-radius: 8px;
   `;
 
 export const UserName = styled.p`
-  margin-left: 20px;
+  margin-left: ${({theme}) => theme.spacing(5)};
   font-size: ${({theme})=>theme.fontsize.mainFontSize};
   font-weight: 500;
   `;

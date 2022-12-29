@@ -14,7 +14,7 @@ export const TableBody = styled.tbody`
 `;
 
 export const TableTd = styled.td`
-  padding: 10px 20px;
+  padding: ${({theme}) => theme.spacing(2)} ${({theme}) => theme.spacing(5)};
   color: ${({ theme }) => theme.fontcolor.profileTextColor};
   border-style: solid;
   border-width: 0 1px 1px 0;
@@ -30,7 +30,7 @@ export const TableHead = styled.th`
   background: #25c3f3;
   color: ${({theme})=>theme.fontcolor.textColorContrast};
   text-shadow: 0 1px 1px #2d2020;
-  padding: 10px 20px;
+  padding: ${({theme}) => theme.spacing(2)} ${({theme}) => theme.spacing(5)};
   border-style: solid;
   border-width: 0 1px 1px 0;
   border-color: rgb(163, 160, 160);

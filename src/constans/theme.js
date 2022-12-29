@@ -7,5 +7,6 @@ export const theme = {
     textColor: '#010101',
     textColorContrast: '#fff',
     profileTextColor: '#b1b0b0',
-  },
+    },
+  spacing: value => `${value * 4}px `,
 }

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 export const ProfileBox = styled.div`
   width: 250px;
-  margin-bottom: 90px;
+  margin-bottom: ${({theme}) => theme.spacing(22)};
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -9,8 +9,8 @@ export const ProfileBox = styled.div`
   `;
 export const DescriptionBox = styled.div`
   background-color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: ${({theme}) => theme.spacing(7)};
+  padding-bottom: ${({theme}) => theme.spacing(7)};
   `;
 
 export const Avatar = styled.img`
@@ -39,8 +39,8 @@ export const StatsBox = styled.ul`
   background-color: #f1f5f6;
   li{
     flex-basis: calc((100% - 6px) / 3);
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: ${({theme}) => theme.spacing(4)};
+    padding-bottom: ${({theme}) => theme.spacing(6)};
     text-align: center;
     border: 1px solid rgb(233, 233, 233);
   `;
