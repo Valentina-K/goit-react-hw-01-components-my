@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import {ProfileBox,DescriptionBox,Avatar,UserName,ExtentionPropUser,StatsBox,Quantity,Label} from './Profile.styled';
-export const Profile = ({ username, tag, location, avatar, stats }) => {
+export const Profile = ({ username, tag, location, avatar, stats:{followers,likes,views} }) => {
   return <ProfileBox>
   <DescriptionBox>
     <Avatar
@@ -15,15 +15,15 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
   <StatsBox>
     <li>
       <Label >Followers</Label>
-      <Quantity>{stats.followers}</Quantity>
+      <Quantity>{followers}</Quantity>
     </li>
     <li>
       <Label >Views</Label>
-      <Quantity>{stats.views}</Quantity>
+      <Quantity>{views}</Quantity>
     </li>
     <li>
       <Label >Likes</Label>
-      <Quantity>{stats.likes}</Quantity>
+      <Quantity>{likes}</Quantity>
     </li>
   </StatsBox>
 </ProfileBox>
