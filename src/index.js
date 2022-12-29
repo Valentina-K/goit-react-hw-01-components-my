@@ -3,17 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from '@emotion/react';
 import './index.css';
 import {App} from './components/App/App';
-const theme = {
-  fontsize: {
-    mainFontSize: '28px',
-    secondFontSize: '16px',
-  },
-  fontcolor: {
-    textColor: '#010101',
-    textColorContrast: '#fff',
-    profileTextColor: '#b1b0b0',
-  },
-}
+import { theme } from './constans/theme';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
