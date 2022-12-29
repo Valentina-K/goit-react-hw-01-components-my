@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PropTypes from 'prop-types';
+import { ThemeProvider } from '@emotion/react';
 import './index.css';
-import App from './App';
+import {App} from './components/App/App';
 /* import reportWebVitals from './reportWebVitals'; */
-
+const theme = {
+  fontsize: {
+    mainFontSize: '28px',
+    secondFontSize: '16px',
+  },
+  fontcolor: {
+    textColor: '#010101',
+    textColorContrast: '#fff',
+    profileTextColor: '#b1b0b0',
+  },
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme = {theme}>
+<App />
+    </ThemeProvider>
+    
   </React.StrictMode>
 );
 
