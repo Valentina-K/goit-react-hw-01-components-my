@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from '@emotion/react';
 import './index.css';
 import {App} from './components/App/App';
-/* import reportWebVitals from './reportWebVitals'; */
 const theme = {
   fontsize: {
     mainFontSize: '28px',
